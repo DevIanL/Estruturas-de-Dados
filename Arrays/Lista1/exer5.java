@@ -14,8 +14,7 @@ public class exer5 {                                                            
             
             if (numeros[i] %2 ==0) {                                                                    // Identifica se é par ou impar e acrescenta ao vetor correspondente.
                 par ++;
-                pares[par] = numeros[i];
-                
+                pares[par] = numeros[i];   
             }else{
                 impar ++;
                 impares[impar] = numeros[i];
