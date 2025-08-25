@@ -1,4 +1,5 @@
 package src;
+
 public class pilhaEstatica implements pilha {
 
     // CRIANDO ATRIBUTOS DA CLASSE:
@@ -21,6 +22,6 @@ public class pilhaEstatica implements pilha {
     }
 
     public boolean esta_cheia(){                // A pilha está cheia quando o valor do topo (o indice do vetor), corresponder ao tamanho do vetor.
-        return (topo == dados.length -1)        // Tamanho -1, pois, se o tamanho for igual a 10, o indice do vetor irá de 0 a 9.
+        return (topo == dados.length -1);        // Tamanho -1, pois, se o tamanho for igual a 10, o indice do vetor irá de 0 a 9.
     }
 }
