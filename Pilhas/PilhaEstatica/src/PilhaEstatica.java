@@ -61,6 +61,6 @@ public class PilhaEstatica implements Pilha{
             dados[topo] = dado;
         }else{
             System.out.println("Pilha está cheia");
-        }
+        } 
     }
 }

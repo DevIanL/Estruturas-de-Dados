@@ -9,4 +9,4 @@ public class PilhaEstaticaPrincipal {
         a.desempilhar();
         System.out.println(a.imprimir());
     }
-}
+} 

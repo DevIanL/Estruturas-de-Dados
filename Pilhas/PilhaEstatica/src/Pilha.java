@@ -15,5 +15,5 @@ public interface Pilha {
     // METODOS AUXILIARES
     boolean esta_cheia();
     boolean esta_vazia();
-    String imprimir();
+    String imprimir(); 
 }
