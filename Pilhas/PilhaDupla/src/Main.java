@@ -4,30 +4,30 @@ public class Main {
     public static void main(String[] arg){
         PilhaDupla a = new PilhaDupla();
 
-        a.empilhar(1, "Pablo");
-        System.out.println(a.imprimir());
+        a.empilhar_pilha1("Pablo");
+        System.out.println(a.imprimir_pilha1());
 
-        a.empilhar(2, "Pablo");
-        System.out.println(a.imprimir());
+        a.empilhar_pilha2("Pablo");
+        System.out.println(a.imprimir_pilha2());
 
-        a.desempilhar(1);
-        System.out.println(a.imprimir());
+        a.desempilhar_pilha1();
+        System.out.println(a.imprimir_pilha1());
         
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        a.empilhar(1, "Ian");
-        System.out.println(a.imprimir());
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        a.empilhar_pilha1("Ian");
+        System.out.println(a.imprimir_pilha1());
 
-        a.empilhar(2, "Pablo");
-        a.desempilhar(1);
-        a.empilhar(2, "Pablo");
-        System.out.println(a.imprimir());
+        a.empilhar_pilha2("Pablo");
+        a.desempilhar_pilha1();
+        a.empilhar_pilha2("Pablo");
+        System.out.println(a.imprimir_pilha2());
 
     }
 }

@@ -5,7 +5,7 @@ public interface Pilha {
     public boolean esta_cheia();
     public String imprimir();
 
-    public void empilhar(int ponteiro, Object dado);
-    public Object desempilhar(int ponteiro);
-    public Object ler(int ponteiro);
+    public void empilhar(Object dado);
+    public Object desempilhar();
+    public Object ler();
 }

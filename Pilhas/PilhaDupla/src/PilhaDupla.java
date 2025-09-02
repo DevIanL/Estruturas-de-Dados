@@ -22,61 +22,81 @@ public class PilhaDupla {
         return (p1 == -1 && p2 == dados.length);
     }
 
-    public String imprimir(){
-        String retorno = null;
-        if(!esta_vazia()){
-            retorno = "[";
-            for(int i=0; i < dados.length; i++){
+    public String imprimir_pilha1(){
+        String retorno = "[";    
+        for(int i=p1; i >= 0; i--){
             retorno += dados[i] + " ";
-            }
-            retorno += "]";
-        }else{
-            System.out.println("Pilha está vazia.");
         }
+        retorno += "]";
         return retorno;
     }
 
-    public Object ler(int ponteiro){
+    public String imprimir_pilha2(){
+        String retorno = "[";
+        for(int i=p2; i < dados.length; i++){
+            retorno += dados[i] + " ";
+        }
+        retorno += "]";
+        return retorno;
+    }
+
+    public Object ler_pilha1(){
         Object dado = null;
-        if (!esta_vazia()) {
-            if(ponteiro == 1){
+        if (!esta_vazia()){
                 dado = dados[p1];
             }else{
+            System.out.println("está vazia.");
+        }
+        return dado;
+    }
+
+    public Object ler_pilha2(){
+        Object dado = null;
+        if (!esta_vazia()){
                 dado = dados[p2];
-            }
+            }else{
+            System.out.println("está vazia.");
+        }
+        return dado;
+    }
+
+    public Object desempilhar_pilha1(){
+        Object dado = null;
+        if (!esta_vazia()){ 
+            dado = dados[p1];
+            dados[p1] = null;
+            p1--;
         }else{
             System.out.println("está vazia.");
         }
         return dado;
     }
 
-    public Object desempilhar(int ponteiro){
+    public Object desempilhar_pilha2(){
         Object dado = null;
         if (!esta_vazia()) {
-            if(ponteiro == 1){
-                dado = dados[p1];
-                dados[p1] = null;
-                p1--;
-            }else{
-                dado = dados[p2];
-                dados[p2] = null;
-                p2 ++;
-            }
+            dado = dados[p2];
+            dados[p2] = null;
+            p2 ++;
         }else{
             System.out.println("está vazia.");
         }
         return dado;
     }
 
-    public void empilhar(int ponteiro, Object dado){
+    public void empilhar_pilha1(Object dado){
         if(!esta_cheia()){
-            if(ponteiro == 1){
-                p1 ++;
-                dados[p1] = dado;
-            }else{
-                p2 --;
-                dados[p2] = dado;
-            }
+            p1 ++;
+            dados[p1] = dado;
+        }else{
+            System.out.println("está cheia.");
+        }
+    }
+
+    public void empilhar_pilha2(Object dado){
+        if(!esta_cheia()){
+            p2 --;
+            dados[p2] = dado;
         }else{
             System.out.println("está cheia.");
         }
