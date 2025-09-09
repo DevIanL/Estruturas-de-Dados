@@ -1,4 +1,4 @@
-package Revisao.LP1.Ex31.src;
+package Revisao.LP1.Ex3_1.src;
 
 public class ContaBancaria {
     protected double saldo;
