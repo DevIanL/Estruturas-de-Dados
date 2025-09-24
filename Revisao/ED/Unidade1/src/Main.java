@@ -3,7 +3,11 @@ package Revisao.ED.Unidade1.src;
 public class Main {
     public static void main(String[] args){
         FilaEstatica fe1 = new FilaEstatica();
+        FilaCircularEstatica fc1 = new FilaCircularEstatica();
         PilhaEstatica p1 = new PilhaEstatica();
+        
+        // PILHA
+        System.out.println("_____________________PILHA_____________________");
 
         p1.imprimir_lista();
         
@@ -32,6 +36,9 @@ public class Main {
 
         p1.imprimir_lista();
         
+        // FILA ESTATICA
+        System.out.println("_____________________FILA ESTATICA_____________________");
+
         fe1.adicionar_elemento("A");
         fe1.adicionar_elemento("B");
         fe1.adicionar_elemento("C");
@@ -49,11 +56,48 @@ public class Main {
         fe1.ler_elemento();
 
         fe1.remover_elemento();
+        fe1.remover_elemento();
+        fe1.remover_elemento();
+        fe1.adicionar_elemento("D");
+        fe1.adicionar_elemento("E");
+        fe1.adicionar_elemento("F");
         fe1.imprimir_lista();
 
         fe1.esvaziar_lista();
         fe1.imprimir_lista();
 
         fe1.remover_elemento();
+
+        // FILA CIRCULAR
+        System.out.println("_____________________FILA CIRCULAR_____________________");
+
+        fc1.adicionar_elemento("A");
+        fc1.adicionar_elemento("B");
+        fc1.adicionar_elemento("C");
+        fc1.adicionar_elemento("D");
+        fc1.adicionar_elemento("E");
+        fc1.adicionar_elemento("F");
+        fc1.adicionar_elemento("G");
+        fc1.adicionar_elemento("H");
+        fc1.adicionar_elemento("I");
+        fc1.adicionar_elemento("J");
+        fc1.imprimir_lista();
+
+        fc1.atualizar_elemento("X");
+        fc1.imprimir_lista();
+        fc1.ler_elemento();
+
+        fc1.remover_elemento();
+        fc1.remover_elemento();
+        fc1.remover_elemento();
+        fc1.adicionar_elemento("D");
+        fc1.adicionar_elemento("E");
+        fc1.adicionar_elemento("F");
+        fc1.imprimir_lista();
+
+        fc1.esvaziar_lista();
+        fc1.imprimir_lista();
+
+        fc1.remover_elemento();
     }
 }
