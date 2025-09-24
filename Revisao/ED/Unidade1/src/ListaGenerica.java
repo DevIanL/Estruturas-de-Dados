@@ -1,4 +1,4 @@
-package Revisao.ED.src;
+package Revisao.ED.Unidade1.src;
 
 public abstract class ListaGenerica {
 
