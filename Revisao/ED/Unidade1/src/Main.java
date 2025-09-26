@@ -1,6 +1,7 @@
 package Revisao.ED.Unidade1.src;
 
 public class Main {
+
     public static void main(String[] args){
         FilaEstatica fe1 = new FilaEstatica();
         FilaCircularEstatica fc1 = new FilaCircularEstatica();
@@ -84,6 +85,9 @@ public class Main {
         fc1.imprimir_lista();
 
         fc1.atualizar_elemento("X");
+        fc1.adicionar_elemento("D");
+        fc1.adicionar_elemento("E");
+        fc1.adicionar_elemento("F");
         fc1.imprimir_lista();
         fc1.ler_elemento();
 
