@@ -1,4 +1,4 @@
-package Conceitos_ED.Modularizaçao_TAD.src;
+package IntroducaoED.Modularizaçao_TAD.src;
 
 public class Ponto implements PontoInterface{
     private double x;
